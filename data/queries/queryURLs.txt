@@ -1,0 +1,10 @@
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track1.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track2.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track3.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track4.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track5.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track6.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track7.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track8.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track9.wav
+https://sapienza2021adm.s3.eu-south-1.amazonaws.com/hw4/queries/track10.wav
