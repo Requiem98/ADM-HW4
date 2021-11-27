@@ -128,9 +128,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-
-#DATASET
-mp3s-32k/
+#Data
+data/mp3s-32k/
 
 #Script
 *.sh
