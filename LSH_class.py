@@ -51,7 +51,7 @@ class LSH:
         return subVec
     
             
-    def query(self, minhash_query):
+    def query_lsh(self, minhash_query):
         subVec_query = self._create_band(minhash_query.hashvalues)
         match = set()
         similarities = []
@@ -93,9 +93,9 @@ def query(bands, minhashes, query_minhashes, num_perm = 128):
 
         for query in query_minhashes:
             dfout = pd.DataFrame()
-            dfout[query.label.name] = [name[1] for name in lsh.query(query) if len(name) > 0]
-            dfout["similarity"] = [sim[0] for sim in lsh.query(query) if len(sim) > 0]
-            #out.append((query.label.name, lsh.query(query)))
+            dfout[query.label.name] = [name[1] for name in lsh.query_lsh(query) if len(name) > 0]
+            dfout["similarity"] = [sim[0] for sim in lsh.query_lsh(query) if len(sim) > 0]
+    
             dfout.set_index("similarity", inplace=True)
             if(len(dfout) > 0):
                 display(dfout)

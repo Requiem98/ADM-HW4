@@ -25,7 +25,7 @@ class MIN_HASH(object):
         self.label = label
         
         if(len(vec)!=0):
-            self.update(vec, label)
+            self.gen_MinHash(vec, label)
             
 
 
@@ -33,9 +33,6 @@ class MIN_HASH(object):
         return np.ones(num_perm, dtype=np.uint64)*self._max_hash
 
     def _permutations(self, num_perm):
-        # Create parameters for a random bijective permutation function
-        # that maps a 32-bit hash value to another 32-bit hash value.
-        # http://en.wikipedia.org/wiki/Universal_hashing
         gen = np.random.RandomState(self.seed)
         a_b = []
         for _ in range(num_perm):
@@ -44,7 +41,7 @@ class MIN_HASH(object):
         return np.array(a_b, dtype="int64").T
 
 
-    def update(self, vec, label):
+    def gen_MinHash(self, vec, label):
         self.label = label
         hashed_values = np.array([self.hashfunc(el) for el in vec], dtype="int64")
         a, b = self.permutations
